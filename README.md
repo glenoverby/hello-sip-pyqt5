@@ -14,8 +14,8 @@ GUI
 Dependencies
 ------
 1. Qt5 v5.9.1: https://www.qt.io/download/
-2. SIP 4.19.3: https://www.riverbankcomputing.com/software/sip/download
-3. PyQt5 v5.9: https://www.riverbankcomputing.com/software/pyqt/download5
+2. SIP 6.8.6: installed with pip
+3. PyQt5 v5.9: installed with pip
 4. Python 3 (python3)
 
 Quick start
@@ -24,8 +24,11 @@ Quick start
 ```bash
 $ git clone git@github.com:zanton/hello-sip-pyqt5.git
 $ cd hello-sip-pyqt5
+$ python3 -m venv venv
+$ . venv/bin/activate
+$ pip3 install sip PyQt5
 $ make
-$ python3 runme.py
+$ LD_LIBRARY_PATH=$PWD/src python3 runme.py
 ```
 
 Quick troubleshootings

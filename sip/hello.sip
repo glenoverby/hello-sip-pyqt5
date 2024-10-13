@@ -1,15 +1,23 @@
+// Define the SIP wrapper to the (actual) fib library.
+
+//%Module(name=Hello, language="C++")
 %Module hello
 
-%Import QtCore/QtCoremod.sip
+//%Import QtCore/QtCoremod.sip
 
-class Hello {
-
-%TypeHeaderCode
-#include "../src/hello.h"
+%ModuleCode
+#include <hello.h>
 %End
 
+%ExportedHeaderCode
+#include <hello.h>
+%End
+
+class Hello
+{
 public:
   Hello();
   void printme();
-  void draw(long);
+  void draw(long qp_ptr);
 };
+
