@@ -7,6 +7,9 @@ The connection between C++ and Python is based on the SIP tool which is used to 
 The central widget of the GUI is a QPainter surface to be drawn on, and this QPainter surface is drawn by both 
 Python code and C++ code.
 
+This repository is a fork of Zanton's hello-sip-pyqt5. My updates, to work
+with sip-build version 6.8.6 are on the branch new-sip-build
+
 GUI
 ------
 ![alt text](gui.png)
